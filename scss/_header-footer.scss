@@ -1,0 +1,184 @@
+/*header*/
+header{
+    height: 60px;
+    background-image: linear-gradient(to bottom, red, darkred);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    a{
+        height: 100%;
+        display: inline-block;
+        .logo{
+            font-family: 'Kanit', sans-serif;
+            font-style: italic;
+            display: inline-block;
+            font-weight: bold;
+            text-shadow: 6px 1px 1px black;
+            margin-left: 10px;
+            color: white;
+            font-size: 36px;
+        }
+        .logo:hover{
+            transform: scale(1.1,1.1);
+            text-shadow: 7px 2px 4px black;
+            transition: 0.4s;
+        }
+    }
+    nav{
+        margin-right: 10px;
+        display: inline-block;
+        position: relative;
+        top: 4px;
+        right: 10px;
+        ul{
+        z-index: 1;
+        display: none;
+        text-align: center;
+        width: 150px;
+        position: absolute;
+        right: -16px;
+        li{
+            margin-top: 4px;
+            margin-bottom: 5px;
+            a{
+                width: fit-content;
+                font-size: 23px;
+                font-weight: bold;
+                color: black;
+                text-decoration: none;
+                background-color: white;
+                transform: skew(5deg,5deg);
+                box-shadow: 6px 3px 2px black;
+                display: inline-block;
+                padding: 0 2px 0 2px;
+            }
+            a:hover{
+            transform: skew(-5deg,-5deg);
+            box-shadow: 16px 4px 3px black;
+            transition: 0.3s;
+            padding: 0 2px 0 2px;
+            color: black;
+            }
+        }
+        }
+    }
+}
+/*Footer*/
+footer{
+    text-shadow: 3px 1px 1px black;
+    margin-top: 50px;
+    padding-top: 30px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    background-image: linear-gradient(to bottom, darkred, red);
+    .contenidoFooter{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        /*aplica a las 3 subsecciones footer*/
+        div{
+            margin: 3px;
+            h4{
+                padding-bottom: 10px;
+            }
+            ul{
+                li{
+                    list-style: none;
+                    margin-top: 5px;
+                    position: relative;
+                    right: 10px;
+                    a{
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    .derechos{
+        
+        border-top: solid 1px white;
+        padding-top: 20px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .volverArriba{
+        margin-bottom: 20px;
+        display: inline-block;
+        color: white;
+        text-decoration: underline;
+    }
+}
+
+/*Media Queries*/
+/*Pantalla chica*/
+@media only screen and (max-width: 549px) {
+    nav:hover ul{
+        display: block;
+        position: absolute;
+        right: 2px;
+        transition: 1s  ;
+    }
+    li{
+        list-style: none;
+        a{
+            width: 100px;
+            margin-top: 7px;
+        }
+        li:hover a{
+            
+            transition: 0.2s;
+        }
+    }
+}
+/*Pantalla mediana*/
+@media only screen and (min-width: 550px) 
+        {
+            body{
+                background-color: blue;
+            }
+            /*menu hamburguesa se convierte en menu comun*/
+            header{
+                justify-content: space-around;
+            a{
+                position: relative;
+                
+            }
+            nav{
+                display: inline-block;
+                width: auto;
+                height: auto;
+                img{
+                    display: none;
+                }
+                ul{
+                    position: relative;
+                    top: 15px;
+                    display: block;
+                    width: auto;
+                    border: none;
+                    li{
+                        display: inline-block;
+                        margin-right: 6vw;
+                        list-style: none;
+                        a{
+                            font-size: 18px;
+                        }
+                    }
+                }
+        }
+        }
+    }
+/*Pantalla grande*/
+@media only screen and (min-width: 768px) {
+    body{
+        background-color: purple;
+    }
+    .contenidoFooter--redes{
+        li{
+            display: inline-block;
+            margin: 10px;
+        }
+    }
+    }

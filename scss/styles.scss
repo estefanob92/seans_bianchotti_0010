@@ -1,0 +1,55 @@
+@import "variables";
+@import "index";
+@import "menu";
+@import "locales";
+@import "eventos";
+@import "header-footer";
+
+
+@mixin titulos ($width,$color,$background-image,$font-size) {
+    text-shadow: 5px 1px 2px black;
+    box-shadow: 10px 3px 1px black;
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    width: $width;
+    color:$color;
+    background-image: $background-image;
+    font-size: $font-size;
+}
+
+/*Títulos*/
+h1{
+    @include titulos(fit-content,white,linear-gradient(to right, darkred, red),6vh);
+}
+h2{
+    @include titulos(fit-content,white,linear-gradient(to right, darkred, red),5vh);
+}
+h3{
+    @include titulos(fit-content,red,linear-gradient(to right, rgb(228, 225, 225), rgb(54, 7, 7)),4vh);
+}
+
+/*Fonts*/
+body{
+    font-family: 'Kanit', sans-serif;
+}
+
+/*Reseteo estilos*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: solid 1px rgb(214, 150, 31);  */ 
+}
+
+
+
+
+
+
+
+
+
+
+

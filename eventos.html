@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seans es el único fastfood de Argentina que replica la experiencia de diner americano típico. Tenemos las mejores hamburguesas y milkshakes estilo americano. Además, podés hacer reservas para eventos.">
+    <meta name="keywords" content="seans, sean, burgers, milkshake, hamburguesas, americano, diner, fastfood, comida rapida, eventos, cumpleaños">
+    <title>Sean's</title>
+    <!-- link de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--style-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--fonts 1-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet">
+    <!--animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--icono navegador-->
+    <link rel="shortcut icon" href="./img/imagenes-otras/icon-page.png">
+
+</head>
+<body>
+  <header id="volverArriba">
+    <a href="index.html"><span>SEAN'S</span></a>
+    <nav>
+        <p></p>
+        <ul>
+            <li>
+                <a href="menu.html">Menú</a>
+            </li>
+            <li>
+                <a href="locales.html">Locales</a>
+            </li>
+            <li>
+                <a href="eventos.html">Eventos</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+  <main class="mainEventos">
+    <!--sección #4: formulario-->
+    <h1>Hace tu reserva y festejá</h1>
+    <section class="section4Eventos">
+      <!-- inicia form -->
+      <form action="">
+        <div class="datosPersonales">
+              <legend>Dejanos tus datos:</legend>
+            <!--datos personales-->
+              <label for="nombre">Nombre</label>
+              <input type="text" name="nombre" placeholder="nombre" required class="form-control">
+              <label for="apellido">Apellido</label>
+              <input type="text" name="apellido" placeholder="apellido" class="form-control">
+              <label for="email">Email</label>
+              <input type="email" name="email" placeholder="ejemplo@ejemplo.com" required class="form-control">
+              <label for="tel">Teléfono</label>
+              <input type="number" name="tel" placeholder="tu teléfono" required class="form-control">
+        </div>
+        <div class="tipoEvento">
+            <legend>Tu evento:</legend>
+            <!--tipo evento-->
+              <label for="tipo_evento">Tipo de evento</label>
+              <select name="tipo_evento" class="form-control">
+                <option value="cumple_nino">Cumpleaños niño</option>
+                <option value="cumple_adolescente">Cumpleaños adolescente</option>
+                <option value="cumple_mayor">Cumpleaños adulto</option>
+                <option value="otro">Otro</option>
+              </select>
+
+              <label for="duracion_evento">Duración de evento</label>
+              <select name="duracion_evento" class="form-control">
+                <option value="3h">3 horas</option>
+                <option value="6h">6 horas</option>
+                <option value="8h">8 horas</option>
+                <option value="full">Full Day</option>
+              </select>
+        </div>
+        <div class="servicios">
+              <label for="">Servicios a contratar</label>
+              <div class="form-check">
+                <div class="op">
+                  <input  type="checkbox" value="" id="comida" checked>
+                  <label  for="comida">Comida libre</label>
+                </div>
+                <div class="op">
+                  <input  type="checkbox" value="" id="alcohol">
+                  <label  for="alcohol">Bebidas con alcohól</label>
+                </div>
+                <div class="op">
+                  <input  type="checkbox" value="" id="dj">
+                  <label  for="dj">Dj en vivo</label>
+                </div>
+                <div class="op">
+                  <input  type="checkbox" value="" id="animacion">
+                  <label  for="animacion">Animador</label>
+                </div>
+                <div class="op">
+                  <input  type="checkbox" value="" id="cafe">
+                  <label  for="cafe">Cafetería & Pastelería</label>
+                </div>
+            </div>
+        </div>
+        <div class="dondeCuando">
+            <legend>Dónde y cuándo</legend>
+            <!--local evento-->
+              <label for="seleccion_local">Seleccioná el local</label>
+                <input type="radio" name="seleccion_local" value="barrionorte" class="radio">Barrio Norte
+                <input type="radio" name="seleccion_local" value="palermo"class="radio">Palermo
+                <input type="radio" name="seleccion_local" value="abasto"class="radio">Abasto
+                <input type="radio" name="seleccion_local" value="vtelopez"class="radio">Vicente López
+                <input type="radio" name="seleccion_local" value="vtelopez"class="radio">Vicente López
+                <input type="radio" name="seleccion_local" value="vtelopez"class="radio">Vicente López
+        </div>
+            <!--fecha evento-->
+            <div>
+              <label for="fecha">Seleccioná la fecha</label>
+              <input type="date">
+            </div>
+        </div>
+        <div class="finalForm">
+            <!--botones finales formulario-->
+            <input  type="submit" value="Enviar formulario"/>
+            <input  type="reset" value="Limpiar formulario"/>
+        </div>         
+      </form>
+      <!-- termina form -->
+    </section> 
+      <!--mensaje final formulario-->
+      <p class="mensajeFinalForm">Te estaremos contactando dentro de las próximas 48hs para confirmar tu reserva</p>
+  </main>
+  <footer>
+    <!--padre footers-->
+    <div class="contenidoFooter">
+        <!--dvi footer links-->
+        <div class="contenidoFooter--masInfo">
+            <h4>Más Info:</h4>
+            <ul>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="locales.html">Locales</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+            </ul>
+        </div>
+        <!--div footer redes-->
+        <div class="contenidoFooter--redes">
+            <h4>Seguinos en:</h4>
+            <ul>
+                <li><a href="https://www.instagram.com/" target="blank"><img src="./img/imagenes-otras/redes/instagram2.png" alt="logo-instagram" width="30px"></a></li>
+                <li><a href="https://www.facebook.com/" target="blank"><img src="./img/imagenes-otras/redes/okface.png" alt="logo-facebook" width="27px" height="25px"></a></li>
+                <li><a href="https://www.youtube.com/" target="blank"><img src="./img/imagenes-otras/redes/okyt.png" alt="logo-youtube" width="33px"></a></li>
+            </ul>
+        </div>
+        <!--div footer contacto-->
+        <div class="contenidoFooter--contacto">
+            <h4>Contacto:</h4>
+            <ul>
+                <li><a href="https://web.whatsapp.com/" target="blank">Escribinos acá <img src="./img/imagenes-otras/redes/okwsp.png" alt="logo-whatsapp" width="36px"></a></li>
+                <li>infoseans@burger.com.ar</li>
+                <li>0800-9865-7845</li>
+            </ul>
+        </div>
+    </div>
+    <!--derechos-->
+    <p class="derechos">Todos los derechos reservados</p>
+    <!--volver arriba-->
+    <a class="volverArriba" href="#volverArriba">Volver arriba</a>
+</footer>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+</body>
+</html>
