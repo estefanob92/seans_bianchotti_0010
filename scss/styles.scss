@@ -20,7 +20,7 @@
 }
 
 /*Títulos*/
-h1{
+/* h1{
     @include titulos(fit-content,white,linear-gradient(to right, darkred, red),6vh);
 }
 h2{
@@ -28,11 +28,18 @@ h2{
 }
 h3{
     @include titulos(fit-content,red,linear-gradient(to right, rgb(228, 225, 225), rgb(54, 7, 7)),4vh);
+} */
+h1,h2{
+    color: white;
+    font-weight: bold;
+    width: 70%;
+    text-align: center;
+    text-shadow: 5px 0 1px black;
 }
 
 /*Fonts*/
 body{
-    font-family: 'Kanit', sans-serif;
+    /* font-family: 'Kanit', sans-serif; */
 }
 
 /*Reseteo estilos*/
@@ -40,7 +47,7 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* border: solid 1px rgb(214, 150, 31);  */ 
+    /* border: solid 1px rgb(214, 150, 31);   */
 }
 
 

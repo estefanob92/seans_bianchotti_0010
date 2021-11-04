@@ -1,10 +1,15 @@
 @charset "UTF-8";
 /*HTML Index*/
 .mainIndex .section1Banner {
-  background-image: url(../img/img_pruebas/fondo-madera.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 70vh;
+  padding: 15px 0 15px 0;
+  background-image: radial-gradient(red, #720606);
+  /* background-image: url(../img/img_pruebas/fondo-madera.jpg);
+        background-size: cover;
+        background-position: center; */
+  /* height: 70vh; */
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,24 +23,32 @@
 }
 
 .mainIndex .section1Banner p {
+  width: 70%;
   font-size: 15px;
   font-weight: lighter;
   text-align: center;
   padding-top: 20px;
   margin: auto;
+  color: white;
 }
 
 .mainIndex .section1Banner .premio {
+  background-color: white;
   text-align: center;
-  padding-top: 20px;
-  margin: auto;
-  font-size: 4vh;
+  /* margin: auto; */
+  margin: 25px 0 15px 0;
+  font-size: 20px;
   text-decoration: none;
-  color: white;
-  text-shadow: 6px 2px 1px black;
+  color: #363636;
+  font-weight: bold;
+  width: 70%;
+  border-radius: 2%;
+  -webkit-box-shadow: 10px 0px 3px #520101;
+          box-shadow: 10px 0px 3px #520101;
 }
 
 .mainIndex .botonera {
+  padding: 15px 0 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,15 +59,24 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 50vh;
-  background-image: url(../img/img_pruebas/fondo-metalico.jpg);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  /* background-image: url(../img/img_pruebas/fondo-metalico.jpg); */
+  background-image: -webkit-gradient(linear, left top, right top, from(darkred), to(red));
+  background-image: linear-gradient(to right, darkred, red);
+  border-top: dotted 3px white;
+}
+
+.mainIndex .botonera h2 {
+  margin-bottom: 30px;
 }
 
 .mainIndex .botonera a {
   font-size: 4vh;
-  margin: 20px;
+  margin: 10px;
   color: white;
-  background-color: black;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -98,6 +120,10 @@
 .mainIndex .beneficiosYvideo aside iframe {
   width: 250px;
   margin: 10px 5px 10px 5px;
+}
+
+.mainIndex .section2Novedades {
+  background-image: url(../img/img_pruebas/carton.jpg);
 }
 
 .mainIndex .section2Novedades .contenedorNovedades {
@@ -377,7 +403,6 @@ header nav ul li a:hover {
 /*Footer*/
 footer {
   text-shadow: 3px 1px 1px black;
-  margin-top: 50px;
   padding-top: 30px;
   text-align: center;
   color: white;
@@ -506,60 +531,26 @@ footer .volverArriba {
 }
 
 /*Títulos*/
-h1 {
-  text-shadow: 5px 1px 2px black;
-  -webkit-box-shadow: 10px 3px 1px black;
-          box-shadow: 10px 3px 1px black;
-  display: block;
-  text-align: center;
-  margin: auto;
-  padding: 5px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  color: white;
-  background-image: -webkit-gradient(linear, left top, right top, from(darkred), to(red));
-  background-image: linear-gradient(to right, darkred, red);
-  font-size: 6vh;
+/* h1{
+    @include titulos(fit-content,white,linear-gradient(to right, darkred, red),6vh);
 }
-
-h2 {
-  text-shadow: 5px 1px 2px black;
-  -webkit-box-shadow: 10px 3px 1px black;
-          box-shadow: 10px 3px 1px black;
-  display: block;
-  text-align: center;
-  margin: auto;
-  padding: 5px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  color: white;
-  background-image: -webkit-gradient(linear, left top, right top, from(darkred), to(red));
-  background-image: linear-gradient(to right, darkred, red);
-  font-size: 5vh;
+h2{
+    @include titulos(fit-content,white,linear-gradient(to right, darkred, red),5vh);
 }
-
-h3 {
-  text-shadow: 5px 1px 2px black;
-  -webkit-box-shadow: 10px 3px 1px black;
-          box-shadow: 10px 3px 1px black;
-  display: block;
+h3{
+    @include titulos(fit-content,red,linear-gradient(to right, rgb(228, 225, 225), rgb(54, 7, 7)),4vh);
+} */
+h1, h2 {
+  color: white;
+  font-weight: bold;
+  width: 70%;
   text-align: center;
-  margin: auto;
-  padding: 5px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  color: red;
-  background-image: -webkit-gradient(linear, left top, right top, from(#e4e1e1), to(#360707));
-  background-image: linear-gradient(to right, #e4e1e1, #360707);
-  font-size: 4vh;
+  text-shadow: 5px 0 1px black;
 }
 
 /*Fonts*/
 body {
-  font-family: 'Kanit', sans-serif;
+  /* font-family: 'Kanit', sans-serif; */
 }
 
 /*Reseteo estilos*/
@@ -568,6 +559,6 @@ body {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: solid 1px rgb(214, 150, 31);  */
+  /* border: solid 1px rgb(214, 150, 31);   */
 }
 /*# sourceMappingURL=styles.css.map */

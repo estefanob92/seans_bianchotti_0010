@@ -1,41 +1,57 @@
 /*HTML Index*/
 .mainIndex{
     .section1Banner{
-        background-image: url(../img/img_pruebas/fondo-madera.jpg);
+        padding: 15px 0 15px 0;
+        background-image: radial-gradient(red,rgb(114, 6, 6));;
+        /* background-image: url(../img/img_pruebas/fondo-madera.jpg);
         background-size: cover;
-        background-position: center;
-        height: 70vh;
+        background-position: center; */
+        /* height: 70vh; */
+        height: fit-content;
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
         p{
+            width: 70%;
             font-size: 15px;
             font-weight: lighter;
             text-align: center;
             padding-top: 20px;
             margin: auto;
+            color: white;
         }
         .premio{
+            background-color: white;
             text-align: center;
-            padding-top: 20px;
-            margin: auto;
-            font-size: 4vh;
+            /* margin: auto; */
+            margin: 25px 0 15px 0;
+            font-size: 20px;
             text-decoration: none;
-            color: white;
-            text-shadow: 6px 2px 1px black;
+            color: rgb(54, 54, 54);
+            font-weight: bold;
+            width: 70%;
+            border-radius: 2%;
+            box-shadow: 10px 0px 3px rgb(82, 1, 1);
+            
         }
     }
     .botonera{
+        padding: 15px 0 15px 0;
         display: flex;
         flex-flow: column nowrap;
         align-items:center;
-        height: 50vh;
-        background-image: url(../img/img_pruebas/fondo-metalico.jpg);
+        height: fit-content;
+        /* background-image: url(../img/img_pruebas/fondo-metalico.jpg); */
+        background-image: linear-gradient(to right, darkred, red);
+        border-top: dotted 3px white;
+        h2{
+            margin-bottom: 30px;
+        }
         a{
             font-size: 4vh;
-            margin: 20px;
+            margin: 10px;
             color: white;
-            background-color: black;
+            font-weight: bold;
             text-decoration: none;
         }
     }
@@ -66,6 +82,7 @@
         }
     }
     .section2Novedades{
+        background-image: url(../img/img_pruebas/carton.jpg);
         .contenedorNovedades{
             display: flex;
             flex-flow: row wrap;
