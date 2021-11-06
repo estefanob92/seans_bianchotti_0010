@@ -180,6 +180,10 @@
   /* background-image: url(../img/img_pruebas/carton.jpg); */
 }
 
+.mainIndex .section2Novedades h2 {
+  padding: 20px;
+}
+
 .mainIndex .section2Novedades .contenedorNovedades {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -188,12 +192,19 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .mainIndex .section2Novedades .contenedorNovedades a {
-  width: 150px;
+  width: 300px;
+  margin: 10px 0 10px 0;
+}
+
+.mainIndex .section2Novedades .contenedorNovedades a img {
+  width: 300px;
+  border-radius: 4%;
 }
 
 /*---------------------------------------------*/
@@ -461,8 +472,7 @@ footer {
   text-align: center;
   color: white;
   font-size: 16px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(darkred), to(red));
-  background-image: linear-gradient(to bottom, darkred, red);
+  background-color: #640606;
 }
 
 footer .contenidoFooter {
@@ -488,7 +498,7 @@ footer .contenidoFooter div h4 {
 
 footer .contenidoFooter div ul li {
   list-style: none;
-  margin-top: 5px;
+  margin-top: 15px;
   position: relative;
   right: 10px;
 }
@@ -499,10 +509,11 @@ footer .contenidoFooter div ul li a {
 }
 
 footer .derechos {
+  width: 65%;
   border-top: solid 1px white;
   padding-top: 20px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: auto;
+  padding-bottom: 30px;
 }
 
 footer .volverArriba {
@@ -632,6 +643,6 @@ body {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: solid 1px #d6961f;
+  /* border: solid 1px rgb(214, 150, 31);    */
 }
 /*# sourceMappingURL=styles.css.map */

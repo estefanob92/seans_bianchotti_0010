@@ -70,7 +70,7 @@ footer{
     text-align: center;
     color: white;
     font-size: 16px;
-    background-image: linear-gradient(to bottom, darkred, red);
+    background-color: rgb(100, 6, 6);
     .contenidoFooter{
         display: flex;
         flex-flow: row wrap;
@@ -84,7 +84,7 @@ footer{
             ul{
                 li{
                     list-style: none;
-                    margin-top: 5px;
+                    margin-top: 15px;
                     position: relative;
                     right: 10px;
                     a{
@@ -96,11 +96,11 @@ footer{
         }
     }
     .derechos{
-        
+        width: 65%;
         border-top: solid 1px white;
         padding-top: 20px;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin:auto;
+        padding-bottom: 30px;
     }
     .volverArriba{
         margin-bottom: 20px;

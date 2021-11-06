@@ -112,14 +112,23 @@
         }
     }
     .section2Novedades{
+        h2{
+            padding: 20px;
+        }
         border-top: dotted 3px white;
         /* background-image: url(../img/img_pruebas/carton.jpg); */
         .contenedorNovedades{
             display: flex;
             flex-flow: row wrap;
-            justify-content: space-around;
+            justify-content: center;
+            
             a{
-                width: 150px;
+                width: 300px;
+                margin: 10px 0 10px 0;
+                img{
+                    width: 300px;
+                    border-radius: 4%;
+                }
             }
         }
     }
