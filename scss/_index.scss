@@ -1,8 +1,9 @@
 /*HTML Index*/
 .mainIndex{
+    background-image: linear-gradient(to right, darkred, red);
     .section1Banner{
         padding: 15px 0 15px 0;
-        background-image: radial-gradient(red,rgb(114, 6, 6));;
+        /* background-image: radial-gradient(red,rgb(114, 6, 6));; */
         /* background-image: url(../img/img_pruebas/fondo-madera.jpg);
         background-size: cover;
         background-position: center; */
@@ -21,18 +22,24 @@
             color: white;
         }
         .premio{
-            background-color: white;
+            font-family: 'Playfair Display', serif;
+            /* background-color: white; */
             text-align: center;
             /* margin: auto; */
             margin: 25px 0 15px 0;
             font-size: 20px;
             text-decoration: none;
-            color: rgb(54, 54, 54);
+            color: white;
             font-weight: bold;
             width: 70%;
-            border-radius: 2%;
-            box-shadow: 10px 0px 3px rgb(82, 1, 1);
-            
+            border-radius: 5%;
+            border: double 3px white;
+            padding: 10px 0 10px 0;
+            /* box-shadow: 10px 0px 3px rgb(82, 1, 1); */
+        }
+        .premio:hover{
+            transform: scale(1.15,1.15);
+            transition: 0.4s;
         }
     }
     .botonera{
@@ -42,22 +49,34 @@
         align-items:center;
         height: fit-content;
         /* background-image: url(../img/img_pruebas/fondo-metalico.jpg); */
-        background-image: linear-gradient(to right, darkred, red);
+        /* background-image: linear-gradient(to right, darkred, red); */
         border-top: dotted 3px white;
         h2{
             margin-bottom: 30px;
         }
         a{
-            font-size: 4vh;
+            font-size: 23px;
             margin: 10px;
             color: white;
             font-weight: bold;
             text-decoration: none;
         }
+        a:hover{
+            transform: scale(1.15,1.15);
+            transition: 0.4s;
+        }
     }
     .beneficiosYvideo{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
         .section3Beneficios{
-            background-image: url(../img/img_pruebas/carton.jpg);
+            /* background-image: url(../img/img_pruebas/carton.jpg); */
+            margin-bottom: 30px;
+            h2{
+                padding: 15px 0 15px 0;
+            }
+            border-top: dotted 3px white;
             .beneficios{
                 display: flex;
                 flex-flow: row wrap;
@@ -67,22 +86,34 @@
                     width: 150px;
                     box-shadow: 10px 3px 1px black;
                 }
+                img:hover{
+                    transform: scale(1.08,1.08);
+                    transition: 0.3s;
+                }
             }
         
         }  
         aside{
-            background-image: url(../img/img_pruebas/carton.jpg);
+            h2{
+                padding: 15px 0 15px 0;
+            }
+            border-top: dotted 3px white;
+            /* background-image: url(../img/img_pruebas/carton.jpg); */
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
             iframe{
                 width: 250px;
                 margin: 10px 5px 10px 5px;
+
+                border-radius: 3%;
+                box-shadow: 8px 2px 3px darkred;
             }
         }
     }
     .section2Novedades{
-        background-image: url(../img/img_pruebas/carton.jpg);
+        border-top: dotted 3px white;
+        /* background-image: url(../img/img_pruebas/carton.jpg); */
         .contenedorNovedades{
             display: flex;
             flex-flow: row wrap;

@@ -4,6 +4,7 @@
 @import "locales";
 @import "eventos";
 @import "header-footer";
+@import "pruebas";
 
 
 @mixin titulos ($width,$color,$background-image,$font-size) {
@@ -35,6 +36,7 @@ h1,h2{
     width: 70%;
     text-align: center;
     text-shadow: 5px 0 1px black;
+    margin: auto;
 }
 
 /*Fonts*/
@@ -47,7 +49,7 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* border: solid 1px rgb(214, 150, 31);   */
+    border: solid 1px rgb(214, 150, 31);   
 }
 
 

@@ -1,8 +1,13 @@
 @charset "UTF-8";
 /*HTML Index*/
+.mainIndex {
+  background-image: -webkit-gradient(linear, left top, right top, from(darkred), to(red));
+  background-image: linear-gradient(to right, darkred, red);
+}
+
 .mainIndex .section1Banner {
   padding: 15px 0 15px 0;
-  background-image: radial-gradient(red, #720606);
+  /* background-image: radial-gradient(red,rgb(114, 6, 6));; */
   /* background-image: url(../img/img_pruebas/fondo-madera.jpg);
         background-size: cover;
         background-position: center; */
@@ -33,18 +38,27 @@
 }
 
 .mainIndex .section1Banner .premio {
-  background-color: white;
+  font-family: 'Playfair Display', serif;
+  /* background-color: white; */
   text-align: center;
   /* margin: auto; */
   margin: 25px 0 15px 0;
   font-size: 20px;
   text-decoration: none;
-  color: #363636;
+  color: white;
   font-weight: bold;
   width: 70%;
-  border-radius: 2%;
-  -webkit-box-shadow: 10px 0px 3px #520101;
-          box-shadow: 10px 0px 3px #520101;
+  border-radius: 5%;
+  border: double 3px white;
+  padding: 10px 0 10px 0;
+  /* box-shadow: 10px 0px 3px rgb(82, 1, 1); */
+}
+
+.mainIndex .section1Banner .premio:hover {
+  -webkit-transform: scale(1.15, 1.15);
+          transform: scale(1.15, 1.15);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .mainIndex .botonera {
@@ -63,8 +77,7 @@
   height: -moz-fit-content;
   height: fit-content;
   /* background-image: url(../img/img_pruebas/fondo-metalico.jpg); */
-  background-image: -webkit-gradient(linear, left top, right top, from(darkred), to(red));
-  background-image: linear-gradient(to right, darkred, red);
+  /* background-image: linear-gradient(to right, darkred, red); */
   border-top: dotted 3px white;
 }
 
@@ -73,15 +86,40 @@
 }
 
 .mainIndex .botonera a {
-  font-size: 4vh;
+  font-size: 23px;
   margin: 10px;
   color: white;
   font-weight: bold;
   text-decoration: none;
 }
 
+.mainIndex .botonera a:hover {
+  -webkit-transform: scale(1.15, 1.15);
+          transform: scale(1.15, 1.15);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.mainIndex .beneficiosYvideo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .mainIndex .beneficiosYvideo .section3Beneficios {
-  background-image: url(../img/img_pruebas/carton.jpg);
+  /* background-image: url(../img/img_pruebas/carton.jpg); */
+  margin-bottom: 30px;
+  border-top: dotted 3px white;
+}
+
+.mainIndex .beneficiosYvideo .section3Beneficios h2 {
+  padding: 15px 0 15px 0;
 }
 
 .mainIndex .beneficiosYvideo .section3Beneficios .beneficios {
@@ -103,8 +141,16 @@
           box-shadow: 10px 3px 1px black;
 }
 
+.mainIndex .beneficiosYvideo .section3Beneficios .beneficios img:hover {
+  -webkit-transform: scale(1.08, 1.08);
+          transform: scale(1.08, 1.08);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .mainIndex .beneficiosYvideo aside {
-  background-image: url(../img/img_pruebas/carton.jpg);
+  border-top: dotted 3px white;
+  /* background-image: url(../img/img_pruebas/carton.jpg); */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,13 +163,21 @@
           align-items: center;
 }
 
+.mainIndex .beneficiosYvideo aside h2 {
+  padding: 15px 0 15px 0;
+}
+
 .mainIndex .beneficiosYvideo aside iframe {
   width: 250px;
   margin: 10px 5px 10px 5px;
+  border-radius: 3%;
+  -webkit-box-shadow: 8px 2px 3px darkred;
+          box-shadow: 8px 2px 3px darkred;
 }
 
 .mainIndex .section2Novedades {
-  background-image: url(../img/img_pruebas/carton.jpg);
+  border-top: dotted 3px white;
+  /* background-image: url(../img/img_pruebas/carton.jpg); */
 }
 
 .mainIndex .section2Novedades .contenedorNovedades {
@@ -530,6 +584,24 @@ footer .volverArriba {
   }
 }
 
+.circulo {
+  width: 80vw;
+  height: 80vw;
+  background-color: white;
+  margin: auto;
+  border-radius: 50%;
+  -webkit-box-shadow: 10px 2px 3px black;
+          box-shadow: 10px 2px 3px black;
+}
+
+.circulo .tituloCirculo {
+  font-size: 10vw;
+  /* height: ;
+        width:  ; */
+  margin: auto;
+  text-align: center;
+}
+
 /*Títulos*/
 /* h1{
     @include titulos(fit-content,white,linear-gradient(to right, darkred, red),6vh);
@@ -546,6 +618,7 @@ h1, h2 {
   width: 70%;
   text-align: center;
   text-shadow: 5px 0 1px black;
+  margin: auto;
 }
 
 /*Fonts*/
@@ -559,6 +632,6 @@ body {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: solid 1px rgb(214, 150, 31);   */
+  border: solid 1px #d6961f;
 }
 /*# sourceMappingURL=styles.css.map */
