@@ -1,69 +1,37 @@
 /*HTML Index*/
 .mainIndex{
-    background-image: linear-gradient(to right, darkred, red);
+    color: $color-fonts;
+    .contenedorCarousel{
+        margin: 4px 0 20px 0;
+    }
     .section1Banner{
         padding: 15px 0 15px 0;
-        /* background-image: radial-gradient(red,rgb(114, 6, 6));; */
-        /* background-image: url(../img/img_pruebas/fondo-madera.jpg);
-        background-size: cover;
-        background-position: center; */
-        /* height: 70vh; */
         height: fit-content;
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
         p{
             width: 70%;
-            font-size: 15px;
-            font-weight: lighter;
-            text-align: center;
-            padding-top: 20px;
-            margin: auto;
-            color: white;
-        }
-        .premio{
-            font-family: 'Playfair Display', serif;
-            /* background-color: white; */
-            text-align: center;
-            /* margin: auto; */
-            margin: 25px 0 15px 0;
-            font-size: 20px;
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            width: 70%;
-            border-radius: 5%;
-            border: double 3px white;
-            padding: 10px 0 10px 0;
-            /* box-shadow: 10px 0px 3px rgb(82, 1, 1); */
-        }
-        .premio:hover{
-            transform: scale(1.15,1.15);
-            transition: 0.4s;
         }
     }
     .botonera{
-        padding: 15px 0 15px 0;
+        width: 85%;
+        border-radius: 5%;
+        margin: auto;
         display: flex;
         flex-flow: column nowrap;
-        align-items:center;
         height: fit-content;
-        /* background-image: url(../img/img_pruebas/fondo-metalico.jpg); */
-        /* background-image: linear-gradient(to right, darkred, red); */
-        border-top: dotted 3px white;
+        background-color: $fondo-destaque;
         h2{
-            margin-bottom: 30px;
+            font-size: 18px;
         }
         a{
-            font-size: 23px;
             margin: 10px;
-            color: white;
-            font-weight: bold;
             text-decoration: none;
+            text-align: center;
         }
         a:hover{
-            transform: scale(1.15,1.15);
-            transition: 0.4s;
+            color: $color-fonts;
         }
     }
     .beneficiosYvideo{
@@ -71,20 +39,16 @@
         flex-flow: row wrap;
         justify-content: space-around;
         .section3Beneficios{
-            /* background-image: url(../img/img_pruebas/carton.jpg); */
-            margin-bottom: 30px;
             h2{
                 padding: 15px 0 15px 0;
             }
-            border-top: dotted 3px white;
             .beneficios{
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: space-around;
                 img{
-                    margin: 10px 0 10px 0;
-                    width: 150px;
-                    box-shadow: 10px 3px 1px black;
+                    width:220px;
+                    margin-top: 15px;
                 }
                 img:hover{
                     transform: scale(1.08,1.08);
@@ -94,20 +58,17 @@
         
         }  
         aside{
-            h2{
-                padding: 15px 0 15px 0;
-            }
-            border-top: dotted 3px white;
-            /* background-image: url(../img/img_pruebas/carton.jpg); */
+            width: 85%;
+            border-radius: 5%;
+            margin: 20px 0 20px 0;
             display: flex;
             flex-flow: column nowrap;
-            align-items: center;
+            height: fit-content;
+            background-color: $fondo-destaque;
+            padding-bottom: 20px;
             iframe{
-                width: 250px;
-                margin: 10px 5px 10px 5px;
-
-                border-radius: 3%;
-                box-shadow: 8px 2px 3px darkred;
+                margin: auto;
+                width: 290px;
             }
         }
     }
@@ -133,6 +94,13 @@
         }
     }
 }
+
+
+.carouselNovedades{
+    /* width: 240px; */
+    margin: 5% 10% 5% 10%;
+    box-shadow: $sombras-parametros $sombras;
+}
 /*---------------------------------------------*/
 
 /*Media Queries*/
@@ -140,7 +108,6 @@
 @media only screen and (min-width: 768px) {
     .contenedorCarousel{
         width: 100%;
-        background-image: linear-gradient(to bottom, red, black)
     }
     .carousel{
         width: 768px;

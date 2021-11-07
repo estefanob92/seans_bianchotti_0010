@@ -1,17 +1,14 @@
-@charset "UTF-8";
 /*HTML Index*/
 .mainIndex {
-  background-image: -webkit-gradient(linear, left top, right top, from(darkred), to(red));
-  background-image: linear-gradient(to right, darkred, red);
+  color: #8d6b2b;
+}
+
+.mainIndex .contenedorCarousel {
+  margin: 4px 0 20px 0;
 }
 
 .mainIndex .section1Banner {
   padding: 15px 0 15px 0;
-  /* background-image: radial-gradient(red,rgb(114, 6, 6));; */
-  /* background-image: url(../img/img_pruebas/fondo-madera.jpg);
-        background-size: cover;
-        background-position: center; */
-  /* height: 70vh; */
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -29,40 +26,12 @@
 
 .mainIndex .section1Banner p {
   width: 70%;
-  font-size: 15px;
-  font-weight: lighter;
-  text-align: center;
-  padding-top: 20px;
-  margin: auto;
-  color: white;
-}
-
-.mainIndex .section1Banner .premio {
-  font-family: 'Playfair Display', serif;
-  /* background-color: white; */
-  text-align: center;
-  /* margin: auto; */
-  margin: 25px 0 15px 0;
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  width: 70%;
-  border-radius: 5%;
-  border: double 3px white;
-  padding: 10px 0 10px 0;
-  /* box-shadow: 10px 0px 3px rgb(82, 1, 1); */
-}
-
-.mainIndex .section1Banner .premio:hover {
-  -webkit-transform: scale(1.15, 1.15);
-          transform: scale(1.15, 1.15);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
 }
 
 .mainIndex .botonera {
-  padding: 15px 0 15px 0;
+  width: 85%;
+  border-radius: 5%;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,34 +39,24 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  /* background-image: url(../img/img_pruebas/fondo-metalico.jpg); */
-  /* background-image: linear-gradient(to right, darkred, red); */
-  border-top: dotted 3px white;
+  background-color: #fde1ab;
 }
 
 .mainIndex .botonera h2 {
-  margin-bottom: 30px;
+  font-size: 18px;
 }
 
 .mainIndex .botonera a {
-  font-size: 23px;
   margin: 10px;
-  color: white;
-  font-weight: bold;
   text-decoration: none;
+  text-align: center;
 }
 
 .mainIndex .botonera a:hover {
-  -webkit-transform: scale(1.15, 1.15);
-          transform: scale(1.15, 1.15);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  color: #8d6b2b;
 }
 
 .mainIndex .beneficiosYvideo {
@@ -110,12 +69,6 @@
           flex-flow: row wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-}
-
-.mainIndex .beneficiosYvideo .section3Beneficios {
-  /* background-image: url(../img/img_pruebas/carton.jpg); */
-  margin-bottom: 30px;
-  border-top: dotted 3px white;
 }
 
 .mainIndex .beneficiosYvideo .section3Beneficios h2 {
@@ -135,10 +88,8 @@
 }
 
 .mainIndex .beneficiosYvideo .section3Beneficios .beneficios img {
-  margin: 10px 0 10px 0;
-  width: 150px;
-  -webkit-box-shadow: 10px 3px 1px black;
-          box-shadow: 10px 3px 1px black;
+  width: 220px;
+  margin-top: 15px;
 }
 
 .mainIndex .beneficiosYvideo .section3Beneficios .beneficios img:hover {
@@ -149,8 +100,9 @@
 }
 
 .mainIndex .beneficiosYvideo aside {
-  border-top: dotted 3px white;
-  /* background-image: url(../img/img_pruebas/carton.jpg); */
+  width: 85%;
+  border-radius: 5%;
+  margin: 20px 0 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,21 +110,16 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.mainIndex .beneficiosYvideo aside h2 {
-  padding: 15px 0 15px 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #fde1ab;
+  padding-bottom: 20px;
 }
 
 .mainIndex .beneficiosYvideo aside iframe {
-  width: 250px;
-  margin: 10px 5px 10px 5px;
-  border-radius: 3%;
-  -webkit-box-shadow: 8px 2px 3px darkred;
-          box-shadow: 8px 2px 3px darkred;
+  margin: auto;
+  width: 290px;
 }
 
 .mainIndex .section2Novedades {
@@ -207,14 +154,19 @@
   border-radius: 4%;
 }
 
+.carouselNovedades {
+  /* width: 240px; */
+  margin: 5% 10% 5% 10%;
+  -webkit-box-shadow: 0 0 10px #53492c;
+          box-shadow: 0 0 10px #53492c;
+}
+
 /*---------------------------------------------*/
 /*Media Queries*/
 /*pantallas medias y grandes*/
 @media only screen and (min-width: 768px) {
   .contenedorCarousel {
     width: 100%;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(red), to(black));
-    background-image: linear-gradient(to bottom, red, black);
   }
   .carousel {
     width: 768px;
@@ -377,8 +329,7 @@
 /*header*/
 header {
   height: 60px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(red), to(darkred));
-  background-image: linear-gradient(to bottom, red, darkred);
+  /* background-image: linear-gradient(to bottom, red, darkred); */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -389,6 +340,8 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: white;
+  border-bottom: solid 1px #b9b97b;
 }
 
 header a {
@@ -397,14 +350,13 @@ header a {
 }
 
 header a .logo {
-  font-family: 'Kanit', sans-serif;
-  font-style: italic;
   display: inline-block;
   font-weight: bold;
-  text-shadow: 6px 1px 1px black;
   margin-left: 10px;
-  color: white;
-  font-size: 36px;
+  font-size: 30px;
+  font-family: 'Pacifico', cursive;
+  position: relative;
+  top: 7px;
 }
 
 header a .logo:hover {
@@ -435,23 +387,17 @@ header nav ul {
 header nav ul li {
   margin-top: 4px;
   margin-bottom: 5px;
-}
-
-header nav ul li a {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-size: 23px;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-  background-color: white;
-  -webkit-transform: skew(5deg, 5deg);
-          transform: skew(5deg, 5deg);
-  -webkit-box-shadow: 6px 3px 2px black;
-          box-shadow: 6px 3px 2px black;
-  display: inline-block;
-  padding: 0 2px 0 2px;
+  /* a{
+                width: fit-content;
+                font-size: 23px;
+                font-weight: bold;
+                color: black;
+                text-decoration: none;
+                transform: skew(5deg,5deg);
+                box-shadow: 6px 3px 2px black;
+                display: inline-block;
+                padding: 0 2px 0 2px;
+            } */
 }
 
 header nav ul li a:hover {
@@ -467,12 +413,12 @@ header nav ul li a:hover {
 
 /*Footer*/
 footer {
-  text-shadow: 3px 1px 1px black;
+  /* text-shadow: 3px 1px 1px black; */
+  margin-top: 10px;
   padding-top: 30px;
   text-align: center;
   color: white;
-  font-size: 16px;
-  background-color: #640606;
+  background-color: #6b631a;
 }
 
 footer .contenidoFooter {
@@ -613,28 +559,35 @@ footer .volverArriba {
   text-align: center;
 }
 
-/*Títulos*/
-/* h1{
-    @include titulos(fit-content,white,linear-gradient(to right, darkred, red),6vh);
-}
-h2{
-    @include titulos(fit-content,white,linear-gradient(to right, darkred, red),5vh);
-}
-h3{
-    @include titulos(fit-content,red,linear-gradient(to right, rgb(228, 225, 225), rgb(54, 7, 7)),4vh);
-} */
-h1, h2 {
-  color: white;
-  font-weight: bold;
-  width: 70%;
-  text-align: center;
-  text-shadow: 5px 0 1px black;
-  margin: auto;
+/*Fonts*/
+/*Estilos generales*/
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdd791;
 }
 
-/*Fonts*/
-body {
-  /* font-family: 'Kanit', sans-serif; */
+body a {
+  color: #d39c35;
+  text-decoration: none;
+}
+
+body img, body iframe {
+  border-radius: 5%;
+  -webkit-box-shadow: 0 0 10px #53492c;
+          box-shadow: 0 0 10px #53492c;
+}
+
+body li {
+  list-style: none;
+}
+
+body h1 {
+  text-align: center;
+}
+
+body h2 {
+  margin-top: 30px;
+  text-align: center;
 }
 
 /*Reseteo estilos*/
@@ -643,6 +596,6 @@ body {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: solid 1px rgb(214, 150, 31);   */
+  /* border: solid 1px rgb(214, 150, 31);  */
 }
 /*# sourceMappingURL=styles.css.map */

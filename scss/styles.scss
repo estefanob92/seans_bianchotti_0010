@@ -6,51 +6,39 @@
 @import "header-footer";
 @import "pruebas";
 
-
-@mixin titulos ($width,$color,$background-image,$font-size) {
-    text-shadow: 5px 1px 2px black;
-    box-shadow: 10px 3px 1px black;
-    display: block;
-    text-align: center;
-    margin: auto;
-    padding: 5px;
-    width: $width;
-    color:$color;
-    background-image: $background-image;
-    font-size: $font-size;
-}
-
-/*Títulos*/
-/* h1{
-    @include titulos(fit-content,white,linear-gradient(to right, darkred, red),6vh);
-}
-h2{
-    @include titulos(fit-content,white,linear-gradient(to right, darkred, red),5vh);
-}
-h3{
-    @include titulos(fit-content,red,linear-gradient(to right, rgb(228, 225, 225), rgb(54, 7, 7)),4vh);
-} */
-h1,h2{
-    color: white;
-    font-weight: bold;
-    width: 70%;
-    text-align: center;
-    text-shadow: 5px 0 1px black;
-    margin: auto;
-}
-
 /*Fonts*/
-body{
-    /* font-family: 'Kanit', sans-serif; */
-}
 
+
+
+/*Estilos generales*/
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: $fondo;
+    a{
+        color: $color-links;
+        text-decoration: none;
+    }
+    img, iframe{
+        border-radius: $bordes-imagenes;
+        box-shadow: $sombras-parametros $sombras;
+    }
+    li{
+        list-style: none;
+    }
+    h1{
+        text-align: center;
+    }
+    h2{
+        margin-top: 30px;
+        text-align: center;
+    }
+}
 /*Reseteo estilos*/
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* border: solid 1px rgb(214, 150, 31);   */ 
-
+    /* border: solid 1px rgb(214, 150, 31);  */ 
 }
 
 
