@@ -1,9 +1,98 @@
-.form-check{
-    display: block;
-    text-align: start;
-}
-.radio{
-    display: block;
+
+
+.mainEventos{
+    h1{
+        width: 100%;
+        font-size: 28px;
+        margin: 20px 0 20px 0;
+
+    }
+    legend{
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+    input{
+        width: 80%;
+        margin: auto;
+        background-color: rgb(244, 248, 203);
+    }
+    label{
+        width: 80%;
+        padding-left: 40px;
+    }
+    option{
+        width: 80%;
+        background-color: rgb(244, 248, 203);
+    }
+    .op{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        input{
+            width: fit-content;
+            height: fit-content;
+        }
+        label{
+            padding: 0;
+        }
+    }
+    .dondeCuando{
+        label{
+            width: 100%;
+            font-size: 18px;
+            text-align: center;
+            padding: 0 0 10px 0;
+        }
+        input{
+            margin: 0 0 0 70px;
+            position: relative;
+            top: 19px;
+        }
+    }
+    .finalForm{
+        margin: 40px 0 0 0;
+        text-align: center;
+        input{
+            margin: 10px;
+            background-color: $color-links;
+            box-shadow: $sombras-parametros $sombras;
+            border: none;
+            color: $color-fonts;
+        }
+        input:hover{
+            color: white;
+            background-color: $fondo-destaque;
+        }
+    }
+    .fechaForm{
+
+        margin: auto;
+        width: 80%;
+        border-radius: $bordes-imagenes;
+        background-color: $fondo-destaque;
+        label, input{
+            width: 100%;
+        }
+    }
+    .form-check{
+        display: block;
+        text-align: start;
+    }
+    .radio{
+        display: block;
+    }
+    .seccionForm{
+        margin: 20px 3px 20px 3px   ;
+        background-color: $fondo-destaque;
+        padding: 10px;
+        border-radius: $bordes-imagenes;
+    }
+    .mensajeFinalForm{
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 30px;
+    }
 }
 
 /*medio y grande*/

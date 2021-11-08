@@ -5,6 +5,11 @@
           box-shadow: 0 9px 12px #53492c;
 }
 
+.mainIndex .contenedorCarousel img {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .mainIndex .section1Banner {
   padding: 15px 0 15px 0;
   height: -webkit-fit-content;
@@ -23,6 +28,7 @@
 }
 
 .mainIndex .section1Banner p {
+  text-align: center;
   width: 70%;
 }
 
@@ -161,20 +167,74 @@
 .carouselNovedades {
   /* width: 240px; */
   margin: 5% 10% 5% 10%;
-  -webkit-box-shadow: 0 0 10px #53492c;
-          box-shadow: 0 0 10px #53492c;
+}
+
+.carouselNovedades img {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 /*---------------------------------------------*/
 /*Media Queries*/
 /*pantallas medias y grandes*/
 @media only screen and (min-width: 768px) {
-  .contenedorCarousel {
-    width: 100%;
+  .mainIndex .section1Banner p {
+    width: 30%;
   }
-  .carousel {
+  .mainIndex .botonera {
+    width: 500px;
+  }
+  .mainIndex .botonera h2 {
+    font-size: 32px;
+  }
+  .mainIndex .botonera a {
+    font-size: 26px;
+  }
+  .mainIndex .contenedorCarousel {
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .mainIndex .carousel {
     width: 768px;
     margin: auto;
+  }
+  .mainIndex .beneficiosYvideo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainIndex .beneficiosYvideo .section3Beneficios {
+    width: 45%;
+  }
+  .mainIndex .beneficiosYvideo .section3Beneficios a img {
+    margin: 20px;
+  }
+  .mainIndex .beneficiosYvideo aside {
+    width: 45%;
+    height: 500px;
+  }
+  .mainIndex .beneficiosYvideo aside iframe {
+    height: 80%;
+  }
+  .mainIndex .carouselNovedades {
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+  }
+  .mainIndex .carouselNovedades .carousel {
+    width: 40%;
+    -webkit-box-shadow: 0 0 10px #53492c;
+            box-shadow: 0 0 10px #53492c;
+    border-radius: 5%;
   }
 }
 
@@ -370,13 +430,123 @@
   height: 260px;
 }
 
-.form-check {
+.mainEventos h1 {
+  width: 100%;
+  font-size: 28px;
+  margin: 20px 0 20px 0;
+}
+
+.mainEventos legend {
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.mainEventos input {
+  width: 80%;
+  margin: auto;
+  background-color: #f4f8cb;
+}
+
+.mainEventos label {
+  width: 80%;
+  padding-left: 40px;
+}
+
+.mainEventos option {
+  width: 80%;
+  background-color: #f4f8cb;
+}
+
+.mainEventos .op {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainEventos .op input {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.mainEventos .op label {
+  padding: 0;
+}
+
+.mainEventos .dondeCuando label {
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  padding: 0 0 10px 0;
+}
+
+.mainEventos .dondeCuando input {
+  margin: 0 0 0 70px;
+  position: relative;
+  top: 19px;
+}
+
+.mainEventos .finalForm {
+  margin: 40px 0 0 0;
+  text-align: center;
+}
+
+.mainEventos .finalForm input {
+  margin: 10px;
+  background-color: #d39c35;
+  -webkit-box-shadow: 0 0 10px #53492c;
+          box-shadow: 0 0 10px #53492c;
+  border: none;
+  color: #8d6b2b;
+}
+
+.mainEventos .finalForm input:hover {
+  color: white;
+  background-color: #fde1ab;
+}
+
+.mainEventos .fechaForm {
+  margin: auto;
+  width: 80%;
+  border-radius: 5%;
+  background-color: #fde1ab;
+}
+
+.mainEventos .fechaForm label, .mainEventos .fechaForm input {
+  width: 100%;
+}
+
+.mainEventos .form-check {
   display: block;
   text-align: start;
 }
 
-.radio {
+.mainEventos .radio {
   display: block;
+}
+
+.mainEventos .seccionForm {
+  margin: 20px 3px 20px 3px;
+  background-color: #fde1ab;
+  padding: 10px;
+  border-radius: 5%;
+}
+
+.mainEventos .mensajeFinalForm {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 30px;
 }
 
 /*medio y grande*/
@@ -636,24 +806,6 @@ footer .volverArriba {
   }
 }
 
-.circulo {
-  width: 80vw;
-  height: 80vw;
-  background-color: white;
-  margin: auto;
-  border-radius: 50%;
-  -webkit-box-shadow: 10px 2px 3px black;
-          box-shadow: 10px 2px 3px black;
-}
-
-.circulo .tituloCirculo {
-  font-size: 10vw;
-  /* height: ;
-        width:  ; */
-  margin: auto;
-  text-align: center;
-}
-
 /*Fonts*/
 /*Estilos generales*/
 body {
@@ -707,6 +859,6 @@ body h3 {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: solid 1px rgb(214, 150, 31);   */
+  /* border: solid 1px rgb(214, 150, 31);  */
 }
 /*# sourceMappingURL=styles.css.map */

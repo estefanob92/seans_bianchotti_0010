@@ -46,7 +46,7 @@
     <section class="section4Eventos">
       <!-- inicia form -->
       <form action="">
-        <div class="datosPersonales">
+        <div class="seccionForm datosPersonales">
               <legend>Dejanos tus datos:</legend>
             <!--datos personales-->
               <label for="nombre">Nombre</label>
@@ -58,7 +58,7 @@
               <label for="tel">Teléfono</label>
               <input type="number" name="tel" placeholder="tu teléfono" required class="form-control">
         </div>
-        <div class="tipoEvento">
+        <div class="seccionForm tipoEvento">
             <legend>Tu evento:</legend>
             <!--tipo evento-->
               <label for="tipo_evento">Tipo de evento</label>
@@ -77,8 +77,8 @@
                 <option value="full">Full Day</option>
               </select>
         </div>
-        <div class="servicios">
-              <label for="">Servicios a contratar</label>
+        <div class="seccionForm servicios">
+              <legend>Servicios a contratar:</legend>
               <div class="form-check">
                 <div class="op">
                   <input  type="checkbox" value="" id="comida" checked>
@@ -102,19 +102,21 @@
                 </div>
             </div>
         </div>
-        <div class="dondeCuando">
-            <legend>Dónde y cuándo</legend>
+        <div class="seccionForm dondeCuando">
+            <legend>Dónde y cuándo:</legend>
             <!--local evento-->
               <label for="seleccion_local">Seleccioná el local</label>
                 <input type="radio" name="seleccion_local" value="barrionorte" class="radio">Barrio Norte
                 <input type="radio" name="seleccion_local" value="palermo"class="radio">Palermo
                 <input type="radio" name="seleccion_local" value="abasto"class="radio">Abasto
+                <input type="radio" name="seleccion_local" value="rosario"class="radio">Rosario
                 <input type="radio" name="seleccion_local" value="vtelopez"class="radio">Vicente López
-                <input type="radio" name="seleccion_local" value="vtelopez"class="radio">Vicente López
-                <input type="radio" name="seleccion_local" value="vtelopez"class="radio">Vicente López
+                <input type="radio" name="seleccion_local" value="parana"class="radio">Paraná
+                <input type="radio" name="seleccion_local" value="nvacba"class="radio">Nueva Córdoba
+                <input type="radio" name="seleccion_local" value="banfield"class="radio">Banfield
         </div>
             <!--fecha evento-->
-            <div>
+            <div class="fechaForm">
               <label for="fecha">Seleccioná la fecha</label>
               <input type="date">
             </div>
