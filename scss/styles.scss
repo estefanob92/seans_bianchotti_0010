@@ -25,12 +25,20 @@ body{
     li{
         list-style: none;
     }
+    section{
+        margin: $margenes-secciones 0 $margenes-secciones 0;
+    }
     h1{
         text-align: center;
+        margin: 0 auto 20px auto;
+        width: 60%;
     }
     h2{
-        margin-top: 30px;
+        /* margin-top: 30px; */
         text-align: center;
+        width: 60%;
+        margin: 0 auto 20px auto;
+
     }
 }
 /*Reseteo estilos*/
@@ -38,7 +46,7 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* border: solid 1px rgb(214, 150, 31);  */ 
+    /* border: solid 1px rgb(214, 150, 31);   */ 
 }
 
 

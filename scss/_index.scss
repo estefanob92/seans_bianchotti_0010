@@ -2,7 +2,8 @@
 .mainIndex{
     color: $color-fonts;
     .contenedorCarousel{
-        margin: 4px 0 20px 0;
+        margin: 0px 0 20px 0;
+        box-shadow: 0 9px 12px $sombras;
     }
     .section1Banner{
         padding: 15px 0 15px 0;
@@ -15,6 +16,7 @@
         }
     }
     .botonera{
+        padding: 30px 0 20px 0;
         width: 85%;
         border-radius: 5%;
         margin: auto;
@@ -24,6 +26,7 @@
         background-color: $fondo-destaque;
         h2{
             font-size: 18px;
+            width: 100%;
         }
         a{
             margin: 10px;
@@ -68,7 +71,7 @@
             padding-bottom: 20px;
             iframe{
                 margin: auto;
-                width: 290px;
+                width: 200px;
             }
         }
     }

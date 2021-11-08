@@ -4,7 +4,9 @@
 }
 
 .mainIndex .contenedorCarousel {
-  margin: 4px 0 20px 0;
+  margin: 0px 0 20px 0;
+  -webkit-box-shadow: 0 9px 12px #53492c;
+          box-shadow: 0 9px 12px #53492c;
 }
 
 .mainIndex .section1Banner {
@@ -29,6 +31,7 @@
 }
 
 .mainIndex .botonera {
+  padding: 30px 0 20px 0;
   width: 85%;
   border-radius: 5%;
   margin: auto;
@@ -47,6 +50,7 @@
 
 .mainIndex .botonera h2 {
   font-size: 18px;
+  width: 100%;
 }
 
 .mainIndex .botonera a {
@@ -119,7 +123,7 @@
 
 .mainIndex .beneficiosYvideo aside iframe {
   margin: auto;
-  width: 290px;
+  width: 200px;
 }
 
 .mainIndex .section2Novedades {
@@ -375,40 +379,40 @@ header nav {
   right: 10px;
 }
 
+header nav .icono-menu-hamburuguesa {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 header nav ul {
+  border-radius: 5%;
+  width: 70vw;
+  background-color: white;
   z-index: 1;
   display: none;
   text-align: center;
-  width: 150px;
   position: absolute;
-  right: -16px;
+  top: 60px;
 }
 
 header nav ul li {
-  margin-top: 4px;
-  margin-bottom: 5px;
-  /* a{
-                width: fit-content;
-                font-size: 23px;
-                font-weight: bold;
-                color: black;
-                text-decoration: none;
-                transform: skew(5deg,5deg);
-                box-shadow: 6px 3px 2px black;
-                display: inline-block;
-                padding: 0 2px 0 2px;
-            } */
+  position: relative;
+  right: 12px;
+  width: 100%;
+}
+
+header nav ul li a {
+  margin: 5px;
+  padding: 15px 0 15px 0;
+  width: 100%;
 }
 
 header nav ul li a:hover {
-  -webkit-transform: skew(-5deg, -5deg);
-          transform: skew(-5deg, -5deg);
-  -webkit-box-shadow: 16px 4px 3px black;
-          box-shadow: 16px 4px 3px black;
+  border-radius: 5%;
+  color: #d39c35;
+  background-color: #fde1ab;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  padding: 0 2px 0 2px;
-  color: black;
 }
 
 /*Footer*/
@@ -454,6 +458,11 @@ footer .contenidoFooter div ul li a {
   text-decoration: none;
 }
 
+footer .contenidoFooter div ul li a img {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 footer .derechos {
   width: 65%;
   border-top: solid 1px white;
@@ -484,7 +493,6 @@ footer .volverArriba {
   }
   li a {
     width: 100px;
-    margin-top: 7px;
   }
   li li:hover a {
     -webkit-transition: 0.2s;
@@ -581,13 +589,21 @@ body li {
   list-style: none;
 }
 
+body section {
+  margin: 70px 0 70px 0;
+}
+
 body h1 {
   text-align: center;
+  margin: 0 auto 20px auto;
+  width: 60%;
 }
 
 body h2 {
-  margin-top: 30px;
+  /* margin-top: 30px; */
   text-align: center;
+  width: 60%;
+  margin: 0 auto 20px auto;
 }
 
 /*Reseteo estilos*/
@@ -596,6 +612,6 @@ body h2 {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: solid 1px rgb(214, 150, 31);  */
+  /* border: solid 1px rgb(214, 150, 31);   */
 }
 /*# sourceMappingURL=styles.css.map */

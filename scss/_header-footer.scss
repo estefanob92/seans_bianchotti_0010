@@ -32,33 +32,32 @@ header{
         position: relative;
         top: 4px;
         right: 10px;
+        .icono-menu-hamburuguesa{
+            box-shadow: none;
+        }
         ul{
+        border-radius: $bordes-imagenes;
+        width: 70vw;
+        background-color: white;
         z-index: 1;
         display: none;
         text-align: center;
-        width: 150px;
         position: absolute;
-        right: -16px;
+        top: 60px;
         li{
-            margin-top: 4px;
-            margin-bottom: 5px;
-            /* a{
-                width: fit-content;
-                font-size: 23px;
-                font-weight: bold;
-                color: black;
-                text-decoration: none;
-                transform: skew(5deg,5deg);
-                box-shadow: 6px 3px 2px black;
-                display: inline-block;
-                padding: 0 2px 0 2px;
-            } */
+            position: relative;
+            right: 12px;
+            width: 100%;
+            a{
+                margin: 5px;
+            padding: 15px 0 15px 0;
+            width: 100%;
+            } 
             a:hover{
-            transform: skew(-5deg,-5deg);
-            box-shadow: 16px 4px 3px black;
+            border-radius: $bordes-imagenes;
+            color: $color-links;
+            background-color: $fondo-destaque;
             transition: 0.3s;
-            padding: 0 2px 0 2px;
-            color: black;
             }
         }
         }
@@ -91,6 +90,9 @@ footer{
                     a{
                         color: white;
                         text-decoration: none;
+                        img{
+                            box-shadow: none;
+                        }
                     }
                 }
             }
@@ -124,7 +126,6 @@ footer{
         list-style: none;
         a{
             width: 100px;
-            margin-top: 7px;
         }
         li:hover a{
             
