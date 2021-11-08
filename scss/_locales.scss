@@ -1,6 +1,33 @@
 .mainLocales{
-    iframe{
-        width: 300px;
-        height: 250px;
+    h1{
+        font-size: 35px;
+        margin: 40px 0 0 0 ;
+        padding: 0;
+        width: 100%;
     }
+    .section5Locales{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        .local{
+            h2{
+                font-size: 25px;
+            }
+            li{
+                text-align: center;
+                width: 260px;
+                position: relative;
+                right: 15px;
+            }
+            margin: 20px 10px 20px 10px;
+            padding-bottom: 60px;
+            iframe{
+                display: block;
+                margin: auto;
+                width: 260px;
+                height: 260px;
+            }
+        }
+    }
+    
 }
