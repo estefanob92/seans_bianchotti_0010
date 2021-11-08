@@ -93,7 +93,7 @@
 
 .mainIndex .beneficiosYvideo .section3Beneficios .beneficios img {
   width: 220px;
-  margin-top: 15px;
+  margin-top: 35px;
 }
 
 .mainIndex .beneficiosYvideo .section3Beneficios .beneficios img:hover {
@@ -118,12 +118,16 @@
   height: -moz-fit-content;
   height: fit-content;
   background-color: #fde1ab;
-  padding-bottom: 20px;
+  padding: 20px;
+}
+
+.mainIndex .beneficiosYvideo aside h2 {
+  width: 100%;
 }
 
 .mainIndex .beneficiosYvideo aside iframe {
   margin: auto;
-  width: 200px;
+  width: 100%;
 }
 
 .mainIndex .section2Novedades {
@@ -379,7 +383,7 @@ header nav {
   right: 10px;
 }
 
-header nav .icono-menu-hamburuguesa {
+header nav img {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -397,7 +401,7 @@ header nav ul {
 
 header nav ul li {
   position: relative;
-  right: 12px;
+  right: 18px;
   width: 100%;
 }
 
@@ -612,6 +616,6 @@ body h2 {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: solid 1px rgb(214, 150, 31);   */
+  /* border: solid 1px rgb(214, 150, 31); */
 }
 /*# sourceMappingURL=styles.css.map */
