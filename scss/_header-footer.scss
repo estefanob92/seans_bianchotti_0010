@@ -5,14 +5,17 @@ header{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    background-color: white;
+    /* background-color: white; */
+    background-image: url(../img/img_pruebas/mesa-madera.jpg);
+    background-size: cover;
     border-bottom: solid 1px rgb(185, 185, 123);
     a{
         height: 100%;
         display: inline-block;
         .logo{
             display: inline-block;
-            font-weight: bold;
+            color: $fondo;
+            /* font-weight: bold; */
             margin-left: 10px;
             font-size: 30px;
             font-family: 'Pacifico', cursive;
@@ -26,7 +29,7 @@ header{
         }
     }
     a:hover{
-        color: $color-fonts;
+        color: $fondo-destaque;
     }
     nav{
         margin-right: 10px;
@@ -36,30 +39,35 @@ header{
         right: 10px;
         img{
             box-shadow: none;
+            background-color: $fondo;
         }
         ul{
         border-radius: $bordes-imagenes;
         width: 70vw;
-        background-color: white;
+        background-image: url(../img/img_pruebas/mesa-madera.jpg);
         z-index: 1;
         display: none;
         text-align: center;
         position: absolute;
         top: 60px;
         li{
+            font-family: 'Pacifico', cursive;
+            font-size: 19px;
             position: relative;
             right: 18px;
             width: 100%;
             a{
-                margin: 5px;
-            padding: 15px 0 15px 0;
+            margin: 3px;
+            padding: 5px 0 5px 0;
             width: 100%;
+            color: $fondo;
             } 
             a:hover{
-            border-radius: $bordes-imagenes;
-            color: $color-links;
-            background-color: $fondo-destaque;
-            transition: 0.3s;
+                border-radius: $bordes-imagenes;
+                color: white;
+                background-color: $fondo-destaque;
+                transition: 0.3s;
+                z-index: 1;
             }
         }
         }
@@ -68,11 +76,15 @@ header{
 /*Footer*/
 footer{
     /* text-shadow: 3px 1px 1px black; */
+    font-size: 13px;
     margin-top: 10px;
     padding-top: 30px;
     text-align: center;
     color: white;
-    background-color: rgb(107, 99, 26);
+    background-color: $fondo-footer;
+    h4{
+        font-size: 16px;
+    }
     .contenidoFooter{
         display: flex;
         flex-flow: row wrap;
@@ -168,6 +180,7 @@ footer{
                     display: block;
                     width: auto;
                     border: none;
+                    background-image: none;
                     li{
                         padding: 0;
                         margin: 0;
@@ -179,10 +192,11 @@ footer{
                             font-size: 18px;
                             margin: 0;
                             padding: 0;
+                            color: $fondo;
                         }
                         a:hover{
                             background-color: unset;
-                            color: rgb(233, 233, 183);
+                            color: $fondo-destaque;
                         }
                     }
                     li:hover{

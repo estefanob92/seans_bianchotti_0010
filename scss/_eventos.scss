@@ -54,10 +54,9 @@
         text-align: center;
         input{
             margin: 10px;
-            background-color: $color-links;
-            box-shadow: $sombras-parametros $sombras;
+            background-color: $color-fonts;
             border: none;
-            color: $color-fonts;
+            color: white;
         }
         input:hover{
             color: white;
@@ -65,7 +64,7 @@
         }
     }
     .fechaForm{
-
+        color: white;
         margin: auto;
         width: 80%;
         border-radius: $bordes-imagenes;
@@ -82,6 +81,7 @@
         display: block;
     }
     .seccionForm{
+        color: white;
         margin: 20px 3px 20px 3px   ;
         background-color: $fondo-destaque;
         padding: 10px;

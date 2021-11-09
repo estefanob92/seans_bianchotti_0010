@@ -1,8 +1,13 @@
+/*
+$fondo: rgb(253, 215, 145);
+$fondo-destaque: rgb(253, 225, 171);
+$color-fonts: rgb(141, 107, 43);
+$color-links: rgb(211, 156, 53);
+$sombras: rgb(83, 73, 44);
+*/
 /*HTML Index*/
 .mainIndex .contenedorCarousel {
   margin: 0px 0 20px 0;
-  -webkit-box-shadow: 0 9px 12px #53492c;
-          box-shadow: 0 9px 12px #53492c;
 }
 
 .mainIndex .contenedorCarousel img {
@@ -35,6 +40,7 @@
 .mainIndex .botonera {
   padding: 30px 0 20px 0;
   width: 85%;
+  border: double 8px #b2ffa9;
   border-radius: 5%;
   margin: auto;
   display: -webkit-box;
@@ -47,22 +53,28 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: #fde1ab;
+  background-color: #ff4a1c;
 }
 
 .mainIndex .botonera h2 {
   font-size: 18px;
   width: 100%;
+  color: #b2ffa9;
 }
 
 .mainIndex .botonera a {
   margin: 10px;
   text-decoration: none;
   text-align: center;
+  color: white;
 }
 
 .mainIndex .botonera a:hover {
-  color: #8d6b2b;
+  color: #b2ffa9;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .mainIndex .beneficiosYvideo {
@@ -119,11 +131,13 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: #fde1ab;
+  background-color: #ff4a1c;
+  border: double 8px #b2ffa9;
   padding: 20px;
 }
 
 .mainIndex .beneficiosYvideo aside h2 {
+  color: #b2ffa9;
   width: 100%;
 }
 
@@ -259,7 +273,7 @@
   margin: auto;
   width: 80%;
   border-radius: 5%;
-  background-color: #fde1ab;
+  background-color: #ff4a1c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,10 +295,16 @@
 
 .mainMenu .indiceMenu a {
   padding: 25px 0 25px 0;
+  color: white;
 }
 
 .mainMenu .indiceMenu a:hover {
-  color: #8d6b2b;
+  color: #b2ffa9;
+  text-decoration: underline;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .mainMenu section h2 {
@@ -503,23 +523,22 @@
 
 .mainEventos .finalForm input {
   margin: 10px;
-  background-color: #d39c35;
-  -webkit-box-shadow: 0 0 10px #53492c;
-          box-shadow: 0 0 10px #53492c;
+  background-color: #565656;
   border: none;
-  color: #8d6b2b;
+  color: white;
 }
 
 .mainEventos .finalForm input:hover {
   color: white;
-  background-color: #fde1ab;
+  background-color: #ff4a1c;
 }
 
 .mainEventos .fechaForm {
+  color: white;
   margin: auto;
   width: 80%;
   border-radius: 5%;
-  background-color: #fde1ab;
+  background-color: #ff4a1c;
 }
 
 .mainEventos .fechaForm label, .mainEventos .fechaForm input {
@@ -536,8 +555,9 @@
 }
 
 .mainEventos .seccionForm {
+  color: white;
   margin: 20px 3px 20px 3px;
-  background-color: #fde1ab;
+  background-color: #ff4a1c;
   padding: 10px;
   border-radius: 5%;
 }
@@ -586,7 +606,9 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: white;
+  /* background-color: white; */
+  background-image: url(../img/img_pruebas/mesa-madera.jpg);
+  background-size: cover;
   border-bottom: solid 1px #b9b97b;
 }
 
@@ -597,7 +619,8 @@ header a {
 
 header a .logo {
   display: inline-block;
-  font-weight: bold;
+  color: #b2ffa9;
+  /* font-weight: bold; */
   margin-left: 10px;
   font-size: 30px;
   font-family: 'Pacifico', cursive;
@@ -613,7 +636,7 @@ header a .logo:hover {
 }
 
 header a:hover {
-  color: #8d6b2b;
+  color: #ff4a1c;
 }
 
 header nav {
@@ -627,12 +650,13 @@ header nav {
 header nav img {
   -webkit-box-shadow: none;
           box-shadow: none;
+  background-color: #b2ffa9;
 }
 
 header nav ul {
   border-radius: 5%;
   width: 70vw;
-  background-color: white;
+  background-image: url(../img/img_pruebas/mesa-madera.jpg);
   z-index: 1;
   display: none;
   text-align: center;
@@ -641,33 +665,42 @@ header nav ul {
 }
 
 header nav ul li {
+  font-family: 'Pacifico', cursive;
+  font-size: 19px;
   position: relative;
   right: 18px;
   width: 100%;
 }
 
 header nav ul li a {
-  margin: 5px;
-  padding: 15px 0 15px 0;
+  margin: 3px;
+  padding: 5px 0 5px 0;
   width: 100%;
+  color: #b2ffa9;
 }
 
 header nav ul li a:hover {
   border-radius: 5%;
-  color: #d39c35;
-  background-color: #fde1ab;
+  color: white;
+  background-color: #ff4a1c;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  z-index: 1;
 }
 
 /*Footer*/
 footer {
   /* text-shadow: 3px 1px 1px black; */
+  font-size: 13px;
   margin-top: 10px;
   padding-top: 30px;
   text-align: center;
   color: white;
-  background-color: #6b631a;
+  background-color: #3f2a2b;
+}
+
+footer h4 {
+  font-size: 16px;
 }
 
 footer .contenidoFooter {
@@ -773,6 +806,7 @@ footer .volverArriba {
     display: block;
     width: auto;
     border: none;
+    background-image: none;
   }
   header nav ul li {
     padding: 0;
@@ -788,10 +822,11 @@ footer .volverArriba {
     font-size: 18px;
     margin: 0;
     padding: 0;
+    color: #b2ffa9;
   }
   header nav ul li a:hover {
     background-color: unset;
-    color: #e9e9b7;
+    color: #ff4a1c;
   }
   header nav ul li:hover {
     background-color: unset;
@@ -806,19 +841,19 @@ footer .volverArriba {
   }
 }
 
-/*Fonts*/
+/* SCSS RGB */
 /*Estilos generales*/
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #fdd791;
+  background-color: #b2ffa9;
 }
 
 body main {
-  color: #8d6b2b;
+  color: #565656;
 }
 
 body a {
-  color: #d39c35;
+  color: #565656;
   text-decoration: none;
 }
 

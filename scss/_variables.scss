@@ -1,11 +1,20 @@
-$fondo: rgb(253, 215, 145);
-$fondo-destaque: rgb(253, 225, 171);
-$color-fonts: rgb(141, 107, 43);
-$color-links: rgb(211, 156, 53);
+$fondo: rgba(178, 255, 169, 1);
+$fondo-destaque: rgba(255, 74, 28, 1);
+$color-fonts: rgba(86, 86, 86, 1);
+$color-links: rgba(86, 86, 86, 1);
+$fondo-footer: rgba(63, 42, 43, 1);
 $sombras: rgb(83, 73, 44);
 $sombras-parametros: 0 0 10px;
 $bordes-imagenes: 5%;
 $margenes-titulos2: 10px;
 $margenes-titulos1: 20px;
 $margenes-secciones: 70px;
+
+/*
+$fondo: rgb(253, 215, 145);
+$fondo-destaque: rgb(253, 225, 171);
+$color-fonts: rgb(141, 107, 43);
+$color-links: rgb(211, 156, 53);
+$sombras: rgb(83, 73, 44);
+*/
 
