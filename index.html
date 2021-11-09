@@ -17,6 +17,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@200;300;500&display=swap" rel="stylesheet">
     <!--animaciones-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/animate.css">
     <!--icono navegador-->
     <link rel="shortcut icon" href="./img/imagenes-otras/icon-page.png">
 
@@ -82,15 +83,11 @@
             </div>
         </div>
         <!--fin carousel-->
-        
-
         <!--sección #1: banner principal-->
         <section class="section1Banner">
             <h1 class="animate__animated animate__bounceInDown">Best  Burger  in  Town, since 1992</h1>
-            <p>Sean's es el único lugar en Argentina donde podés econtrar la típica comida rápida de diner Americano, además, contás con nuestro servicio de eventos para fiestas privadas totalmente a tu medida y al mejor precio de mercado.</p>
+            <p class="animate__animated animate__bounceInDown">Sean's es el único lugar en Argentina donde podés econtrar la típica comida rápida de diner Americano, además, contás con nuestro servicio de eventos para fiestas privadas totalmente a tu medida y al mejor precio de mercado.</p>
         </section>
-
-
         <!--conocé nuestros productos-->
         <div class="botonera">
             <h2>Conocé nuestros productos</h2>
@@ -101,25 +98,21 @@
                 <div class="botonera__botonCafe">Cafetería & Pastelería</div>
             </a>
         </div>
-
-
         <div class="beneficiosYvideo">
-
             <!--sección #3: Descuentos-->
-            
             <section class="section3Beneficios">
                 <h2>Beneficios</h2>
                 <div class="beneficios">
-                    <a href="https://www.pedidosya.com.ar/" target="balnk"><img src="./img/imagenes-otras/beneficios/beneficio-pedidos-ya.jpg" alt="logo-pedidosya" width="280px"></a>
-                    <a href="https://suscripciones.lanacion.com.ar/suscribirme" target="balnk"><img src="./img/imagenes-otras/beneficios/beneficio-la-nacion.jpg" alt="logo-club_la_nacion" width="280px"></a>
-                    <a href="https://plataforma.coderhouse.com/beneficios" target="balnk"><img src="./img/imagenes-otras/beneficios/beneficio-coderhouse.jpg" alt="logo-codehouse" width="280px"></a>
-                    <a href="https://www.personal.com.ar/" target="balnk"><img src="./img/imagenes-otras/beneficios/beneficio-personal.jpg" alt="logo-personal" width="280px"></a>
+                    <a href="https://www.pedidosya.com.ar/" target="balnk"><img class="wow animate__animated animate__backInLeft" src="./img/imagenes-otras/beneficios/beneficio-pedidos-ya.jpg" alt="logo-pedidosya" width="280px"></a>
+                    <a href="https://suscripciones.lanacion.com.ar/suscribirme" target="balnk"><img class="wow animate__animated animate__backInRight" src="./img/imagenes-otras/beneficios/beneficio-la-nacion.jpg" alt="logo-club_la_nacion" width="280px"></a>
+                    <a href="https://plataforma.coderhouse.com/beneficios" target="balnk"><img class="wow animate__animated animate__backInLeft" src="./img/imagenes-otras/beneficios/beneficio-coderhouse.jpg" alt="logo-codehouse" width="280px"></a>
+                    <a href="https://www.personal.com.ar/" target="balnk"><img class="wow animate__animated animate__backInRight" src="./img/imagenes-otras/beneficios/beneficio-personal.jpg" alt="logo-personal" width="280px"></a>
                 </div>
             </section>
             <!--Aside iframe-->
-            <aside>
+            <aside class="wow animate__animated animate__backInUp">
                 <h2>El proceso...</h2>
-                    <iframe  src="https://www.youtube.com/embed/foD42-73wdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/foD42-73wdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </aside>
         </div>
         <!--sección #2 Novedades-->
@@ -185,7 +178,13 @@
         <!--volver arriba-->
         <a class="volverArriba" href="#volverArriba">Volver arriba</a>
     </footer>
+    <!--boots-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <!--wowjs-->
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 </body>
 </html>
 
