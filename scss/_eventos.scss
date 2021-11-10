@@ -1,11 +1,15 @@
+/*mixin*/
+@mixin boxRoja {
+    background-image: linear-gradient(to right, $fondo-destaque, rgb(247, 108, 73));
+    border: double 8px $fondo;
+}
 
-
+/*HTML Eventos*/
 .mainEventos{
     h1{
         width: 100%;
         font-size: 28px;
         margin: 20px 0 20px 0;
-
     }
     legend{
         text-align: center;
@@ -86,6 +90,8 @@
         background-color: $fondo-destaque;
         padding: 10px;
         border-radius: $bordes-imagenes;
+        height: fit-content;
+        @include boxRoja;
     }
     .mensajeFinalForm{
         width: 70%;
@@ -94,18 +100,32 @@
         padding-bottom: 30px;
     }
 }
-
-/*medio y grande*/
+/*---------------------------------------------*/
+/*Media Queries*/
+/*pantallas medias y grandes*/
 @media only screen and (min-width: 768px) {
-    form{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-    }
-    .datosPersonales, .tipoEvento, .servicios, .dondeCuando{
-        width: 500px;
-        margin: 10px;
-        padding: 10px;
-        width: fit-content;
+    .mainEventos{
+        form{
+            /* display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around; */
+            display: grid;
+            
+        }
+        .datosPersonales, .tipoEvento, .servicios, .dondeCuando{
+            width: 600px;
+            width: 40%;
+            margin: 30px auto 10px auto;
+            padding: 10px;
+            width: fit-content;
+        }
+        .fechaForm{
+            width: 20%;
+            @include boxRoja;
+        }
+        .finalForm{
+            width: 20%;
+            margin: 30px auto 10px auto;
+        }
     }
 }

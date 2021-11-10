@@ -1,3 +1,9 @@
+/*mixin*/
+@mixin boxRoja {
+    background-image: linear-gradient(to right, $fondo-destaque, rgb(247, 108, 73));
+    border: double 8px $fondo;
+}
+
 /*HTML Index*/
 .mainIndex{
     
@@ -21,13 +27,12 @@
     .botonera{
         padding: 30px 0 20px 0;
         width: 85%;
-        border: double 8px $fondo;
         border-radius: 5%;
         margin: auto;
         display: flex;
         flex-flow: column nowrap;
         height: fit-content;
-        background-color: $fondo-destaque;
+        @include boxRoja;
         h2{
             font-size: 18px;
             width: 100%;
@@ -41,7 +46,7 @@
         }
         a:hover{
             color: rgba(178, 255, 169, 1);
-            transform: scale(1.2,1.2);
+            transform: scale(1.1,1.1);
             transition: 0.3s;
         }
     }
@@ -75,9 +80,8 @@
             display: flex;
             flex-flow: column nowrap;
             height: fit-content;
-            background-color: $fondo-destaque;
-            border: double 8px $fondo;
             padding: 20px;
+            @include boxRoja;
             h2{
                 color: $fondo;
                 width: 100%;
@@ -119,7 +123,6 @@
     
 }
 /*---------------------------------------------*/
-
 /*Media Queries*/
 /*pantallas medias y grandes*/
 @media only screen and (min-width: 768px) {

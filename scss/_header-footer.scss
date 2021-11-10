@@ -89,6 +89,7 @@ footer{
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
+        }
         /*aplica a las 3 subsecciones footer*/
         div{
             margin: 3px;
@@ -108,10 +109,12 @@ footer{
                             box-shadow: none;
                         }
                     }
+                    a:hover{
+                        color: $fondo;
+                    }
                 }
             }
         }
-    }
     .derechos{
         width: 65%;
         border-top: solid 1px white;
@@ -125,8 +128,11 @@ footer{
         color: white;
         text-decoration: underline;
     }
+    .volverArriba:hover{
+        color: $fondo;
+    }
 }
-
+/*------------------------------*/
 /*Media Queries*/
 /*Pantalla chica*/
 @media only screen and (max-width: 549px) {
@@ -208,10 +214,22 @@ footer{
     }
 /*Pantalla grande*/
 @media only screen and (min-width: 768px) {
-    .contenidoFooter--redes{
-        li{
-            display: inline-block;
-            margin: 10px;
+    footer{
+        .contenidoFooter{
+            width: 70%;
+            margin: auto;
+            .contenidoFooter--masInfo{
+                width: 200px;
+            }
+        }
+        .contenidoFooter--redes{
+            li{
+                display: inline-block;
+                margin: 10px;
+            }
+        }
+        .derechos{
+            border-top: none;
         }
     }
-    }
+}

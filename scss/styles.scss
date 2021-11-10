@@ -5,7 +5,6 @@
 @import "eventos";
 @import "header-footer";
 
-
 /* SCSS RGB */
 $davys-grey: rgba(86, 86, 86, 1);
 $mint-green: rgba(178, 255, 169, 1);
@@ -13,11 +12,11 @@ $red-orange-color-wheel: rgba(255, 74, 28, 1);
 $coffee: rgba(129, 82, 63, 1);
 $old-burgundy: rgba(63, 42, 43, 1);
 
-
 /*Estilos generales*/
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: $fondo;
+    /* background-color: $fondo; */
+    background-image: linear-gradient(to bottom, rgba(178, 255, 169, 1), rgb(118, 177, 113) );
     main{
         color: $color-fonts;
     }
@@ -36,19 +35,26 @@ body{
         margin: $margenes-secciones 0 $margenes-secciones 0;
     }
     h1{
+        font-weight: bold;
         text-align: center;
         margin: 0 auto 20px auto;
         width: 60%;
     }
     h2{
         /* margin-top: 30px; */
+        font-weight: bold;
+        font-size: 40px;
         text-align: center;
         width: 60%;
         margin: 0 auto 20px auto;
 
     }
     h3{
+        font-weight: bold;
         font-size: 19px;
+    }
+    h4{
+        font-weight: bold;
     }
 }
 /*Reseteo estilos*/
@@ -56,7 +62,7 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* border: solid 1px rgb(214, 150, 31);  */  
+    /* border: solid 1px rgb(37, 32, 22);    */
 }
 
 

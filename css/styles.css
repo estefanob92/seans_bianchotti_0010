@@ -5,6 +5,7 @@ $color-fonts: rgb(141, 107, 43);
 $color-links: rgb(211, 156, 53);
 $sombras: rgb(83, 73, 44);
 */
+/*mixin*/
 /*HTML Index*/
 .mainIndex .contenedorCarousel {
   margin: 0px 0 20px 0;
@@ -40,7 +41,6 @@ $sombras: rgb(83, 73, 44);
 .mainIndex .botonera {
   padding: 30px 0 20px 0;
   width: 85%;
-  border: double 8px #b2ffa9;
   border-radius: 5%;
   margin: auto;
   display: -webkit-box;
@@ -53,7 +53,9 @@ $sombras: rgb(83, 73, 44);
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: #ff4a1c;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff4a1c), to(#f76c49));
+  background-image: linear-gradient(to right, #ff4a1c, #f76c49);
+  border: double 8px #b2ffa9;
 }
 
 .mainIndex .botonera h2 {
@@ -71,8 +73,8 @@ $sombras: rgb(83, 73, 44);
 
 .mainIndex .botonera a:hover {
   color: #b2ffa9;
-  -webkit-transform: scale(1.2, 1.2);
-          transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -131,9 +133,10 @@ $sombras: rgb(83, 73, 44);
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: #ff4a1c;
-  border: double 8px #b2ffa9;
   padding: 20px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff4a1c), to(#f76c49));
+  background-image: linear-gradient(to right, #ff4a1c, #f76c49);
+  border: double 8px #b2ffa9;
 }
 
 .mainIndex .beneficiosYvideo aside h2 {
@@ -252,6 +255,7 @@ $sombras: rgb(83, 73, 44);
   }
 }
 
+/*mixin*/
 /*HTML Menu*/
 .item:hover {
   -webkit-transform: scale(1.2, 1.2);
@@ -273,7 +277,10 @@ $sombras: rgb(83, 73, 44);
   margin: auto;
   width: 80%;
   border-radius: 5%;
-  background-color: #ff4a1c;
+  /* background-color: $fondo-destaque; */
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff4a1c), to(#f76c49));
+  background-image: linear-gradient(to right, #ff4a1c, #f76c49);
+  border: double 8px #b2ffa9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,7 +297,9 @@ $sombras: rgb(83, 73, 44);
 }
 
 .mainMenu .indiceMenu h2 {
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  text-align: center;
+  width: 100%;
 }
 
 .mainMenu .indiceMenu a {
@@ -337,6 +346,8 @@ $sombras: rgb(83, 73, 44);
 }
 
 .mainMenu section .burgers .burgers__linea .item {
+  padding: 15px;
+  border-radius: 5%;
   margin-top: 15px;
 }
 
@@ -405,6 +416,21 @@ $sombras: rgb(83, 73, 44);
     padding: 20px;
     width: 450px;
   }
+  .mainMenu .burgers__linea {
+    width: 70%;
+    margin: auto;
+  }
+  .mainMenu .cafe {
+    width: 70%;
+    margin: auto;
+  }
+  .mainMenu .cafe p {
+    margin-top: 20px;
+  }
+  .mainMenu .otros {
+    width: 60%;
+    margin: auto;
+  }
 }
 
 .mainLocales h1 {
@@ -450,6 +476,8 @@ $sombras: rgb(83, 73, 44);
   height: 260px;
 }
 
+/*mixin*/
+/*HTML Eventos*/
 .mainEventos h1 {
   width: 100%;
   font-size: 28px;
@@ -560,6 +588,12 @@ $sombras: rgb(83, 73, 44);
   background-color: #ff4a1c;
   padding: 10px;
   border-radius: 5%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff4a1c), to(#f76c49));
+  background-image: linear-gradient(to right, #ff4a1c, #f76c49);
+  border: double 8px #b2ffa9;
 }
 
 .mainEventos .mensajeFinalForm {
@@ -569,26 +603,35 @@ $sombras: rgb(83, 73, 44);
   padding-bottom: 30px;
 }
 
-/*medio y grande*/
+/*---------------------------------------------*/
+/*Media Queries*/
+/*pantallas medias y grandes*/
 @media only screen and (min-width: 768px) {
-  form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
+  .mainEventos form {
+    /* display: flex;
             flex-flow: row wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+            justify-content: space-around; */
+    display: -ms-grid;
+    display: grid;
   }
-  .datosPersonales, .tipoEvento, .servicios, .dondeCuando {
-    width: 500px;
-    margin: 10px;
+  .mainEventos .datosPersonales, .mainEventos .tipoEvento, .mainEventos .servicios, .mainEventos .dondeCuando {
+    width: 600px;
+    width: 40%;
+    margin: 30px auto 10px auto;
     padding: 10px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+  }
+  .mainEventos .fechaForm {
+    width: 20%;
+    background-image: -webkit-gradient(linear, left top, right top, from(#ff4a1c), to(#f76c49));
+    background-image: linear-gradient(to right, #ff4a1c, #f76c49);
+    border: double 8px #b2ffa9;
+  }
+  .mainEventos .finalForm {
+    width: 20%;
+    margin: 30px auto 10px auto;
   }
 }
 
@@ -697,6 +740,7 @@ footer {
   text-align: center;
   color: white;
   background-color: #3f2a2b;
+  /*aplica a las 3 subsecciones footer*/
 }
 
 footer h4 {
@@ -713,32 +757,35 @@ footer .contenidoFooter {
           flex-flow: row wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  /*aplica a las 3 subsecciones footer*/
 }
 
-footer .contenidoFooter div {
+footer div {
   margin: 3px;
 }
 
-footer .contenidoFooter div h4 {
+footer div h4 {
   padding-bottom: 10px;
 }
 
-footer .contenidoFooter div ul li {
+footer div ul li {
   list-style: none;
   margin-top: 15px;
   position: relative;
   right: 10px;
 }
 
-footer .contenidoFooter div ul li a {
+footer div ul li a {
   color: white;
   text-decoration: none;
 }
 
-footer .contenidoFooter div ul li a img {
+footer div ul li a img {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+footer div ul li a:hover {
+  color: #b2ffa9;
 }
 
 footer .derechos {
@@ -756,6 +803,11 @@ footer .volverArriba {
   text-decoration: underline;
 }
 
+footer .volverArriba:hover {
+  color: #b2ffa9;
+}
+
+/*------------------------------*/
 /*Media Queries*/
 /*Pantalla chica*/
 @media only screen and (max-width: 549px) {
@@ -835,9 +887,19 @@ footer .volverArriba {
 
 /*Pantalla grande*/
 @media only screen and (min-width: 768px) {
-  .contenidoFooter--redes li {
+  footer .contenidoFooter {
+    width: 70%;
+    margin: auto;
+  }
+  footer .contenidoFooter .contenidoFooter--masInfo {
+    width: 200px;
+  }
+  footer .contenidoFooter--redes li {
     display: inline-block;
     margin: 10px;
+  }
+  footer .derechos {
+    border-top: none;
   }
 }
 
@@ -845,7 +907,9 @@ footer .volverArriba {
 /*Estilos generales*/
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #b2ffa9;
+  /* background-color: $fondo; */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#b2ffa9), to(#76b171));
+  background-image: linear-gradient(to bottom, #b2ffa9, #76b171);
 }
 
 body main {
@@ -872,6 +936,7 @@ body section {
 }
 
 body h1 {
+  font-weight: bold;
   text-align: center;
   margin: 0 auto 20px auto;
   width: 60%;
@@ -879,13 +944,20 @@ body h1 {
 
 body h2 {
   /* margin-top: 30px; */
+  font-weight: bold;
+  font-size: 40px;
   text-align: center;
   width: 60%;
   margin: 0 auto 20px auto;
 }
 
 body h3 {
+  font-weight: bold;
   font-size: 19px;
+}
+
+body h4 {
+  font-weight: bold;
 }
 
 /*Reseteo estilos*/
@@ -894,6 +966,6 @@ body h3 {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: solid 1px rgb(214, 150, 31);  */
+  /* border: solid 1px rgb(37, 32, 22);    */
 }
 /*# sourceMappingURL=styles.css.map */

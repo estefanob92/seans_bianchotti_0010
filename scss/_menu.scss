@@ -1,3 +1,10 @@
+/*mixin*/
+@mixin boxRoja {
+    background-image: linear-gradient(to right, $fondo-destaque, rgb(247, 108, 73));
+    border: double 8px $fondo;
+}
+
+
 /*HTML Menu*/
 .item:hover{
     transform: scale(1.2,1.2);
@@ -13,13 +20,16 @@
         margin: auto;
         width: 80%;
         border-radius: $bordes-imagenes;
-        background-color: $fondo-destaque;
+        /* background-color: $fondo-destaque; */
+        @include boxRoja;
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
         height: fit-content;
         h2{
-            margin-top: 20px;
+            /* margin-top: 20px; */
+            text-align: center;
+            width: 100%;
         }
         a{
             padding: 25px 0 25px 0;
@@ -51,6 +61,8 @@
                 flex-flow: row wrap;
                 justify-content: space-around;
                 .item{
+                    padding: 15px;
+                    border-radius: $bordes-imagenes;
                     margin-top: 15px;
                     h4{
                         width: 139px;
@@ -104,6 +116,21 @@
         .indiceMenu{
             padding: 20px;
             width: 450px;
+        }
+        .burgers__linea{
+            width: 70%;
+            margin: auto;
+        }
+        .cafe{
+            width: 70%;
+            margin: auto;
+            p{
+                margin-top: 20px;
+            }
+        }
+        .otros{
+            width: 60%;
+            margin: auto;
         }
     }
 }
