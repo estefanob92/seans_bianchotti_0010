@@ -4,7 +4,6 @@
     border: double 8px $fondo;
 }
 
-
 /*HTML Menu*/
 .item:hover{
     transform: scale(1.2,1.2);
@@ -108,7 +107,7 @@
         }
     }
 }
-
+/*------------------------*/
 /*Media Queries*/
 /*pantallas medias y grandes*/
 @media only screen and (min-width: 768px) {

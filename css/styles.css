@@ -409,6 +409,7 @@ $sombras: rgb(83, 73, 44);
           box-shadow: 0px 0px 5px #5f5d5d;
 }
 
+/*------------------------*/
 /*Media Queries*/
 /*pantallas medias y grandes*/
 @media only screen and (min-width: 768px) {
@@ -433,6 +434,7 @@ $sombras: rgb(83, 73, 44);
   }
 }
 
+/*html locales*/
 .mainLocales h1 {
   font-size: 35px;
   margin: 40px 0 0 0;
